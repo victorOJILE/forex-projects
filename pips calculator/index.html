@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <title>Trading assistant</title>
+ <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+ <main>
+  <h1><center>Trade manager</center></h1>
+  <div class="overflow">
+   <table>
+    <thead>
+     <tr>
+      <th style="text-align: left">Pair</th>
+      <th>Lot</th>
+      <th>Open</th>
+      <th>Close</th>
+      <th>Pips</th>
+      <th>PnL</th>
+      <th>%</th>
+     </tr>
+    </thead>
+    <tbody id="table"></tbody>
+   </table>
+  </div>
+  <button type="button" id="addPair">Add pair</button>
+  <p>Balance: <input type="number" value="1200" class="leverage" id="balance" /></p>
+  <canvas id="canvas"></canvas>
+ </main>
+ <script src="main.js"></script>
+</body>
+
+</html>
